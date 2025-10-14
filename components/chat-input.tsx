@@ -82,7 +82,7 @@ const ChatInput = ({
                   <Textarea
                     autoFocus
                     className="border-0 shadow-none focus-visible:ring-0 resize-none max-h-[50vh] scrollbar rounded-b-none rounded-t"
-                    placeholder="Text here..."
+                    placeholder="发送文本"
                     onKeyDown={(event) => {
                       if (
                         event.key === "Enter" &&

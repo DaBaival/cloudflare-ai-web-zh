@@ -58,7 +58,7 @@ const ModelList = ({
 
   return (
     <Command>
-      <CommandInput placeholder="Filter models..." />
+      <CommandInput placeholder="筛选" />
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
         {groupedModels.map(({ type, models }) => (

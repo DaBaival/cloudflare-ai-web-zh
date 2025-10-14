@@ -17,6 +17,14 @@ const Footer = ({ classname }: { classname?: string }) => {
       >
         Github
       </a>
+        {" | "}
+      <a
+        href="https://github.com/DaBaival/cloudflare-ai-web-zh"
+        target="_blank"
+        rel="noopener"
+      >
+        汉化
+      </a>
     </footer>
   );
 };

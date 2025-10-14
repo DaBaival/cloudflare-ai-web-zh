@@ -11,7 +11,7 @@ export interface Model {
   id: string;
   name: string;
   logo: ReactNode;
-  type: "Text Generation" | "Text to Image";
+  type: "文本生成" | "文本生成图像";
   tag?: string[];
 }
 
@@ -24,41 +24,41 @@ export const models: Model[] = [
     id: "@cf/meta/llama-4-scout-17b-16e-instruct",
     name: "llama-4-scout",
     logo: <MetaLogo />,
-    type: "Text Generation",
+    type: "文本生成",
     tag: ["17b"],
   },
   {
     id: "@cf/aisingapore/gemma-sea-lion-v4-27b-it",
     name: "gemma-sea-lion-v4",
     logo: <GoogleLogo />,
-    type: "Text Generation",
+    type: "文本生成",
     tag: ["27b"],
   },
   {
     id: "@cf/mistralai/mistral-small-3.1-24b-instruct",
     name: "mistral-small-3.1",
     logo: <MistralLogo />,
-    type: "Text Generation",
+    type: "文本生成",
     tag: ["24b"],
   },
   {
     id: "@cf/qwen/qwq-32b",
     name: "qwq",
     logo: <QWenLogo />,
-    type: "Text Generation",
+    type: "文本生成",
     tag: ["32b"],
   },
   {
     id: "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
     name: "deepseek-r1-distill-qwen",
     logo: <DeepSeekLogo />,
-    type: "Text Generation",
+    type: "文本生成",
     tag: ["32b"],
   },
   {
     id: "@cf/leonardo/lucid-origin",
     name: "lucid-origin",
     logo: defaultLogo,
-    type: "Text to Image",
+    type: "文本生成图像",
   },
 ];

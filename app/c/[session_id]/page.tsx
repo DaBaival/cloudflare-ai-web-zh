@@ -203,7 +203,7 @@ const Page = () => {
 
         <ViewTransition name="chat-input">
           <ChatInput
-            models={models.filter((i) => i.type === "Text Generation")}
+            models={models.filter((i) => i.type === "文本生成")}
             className="mx-auto max-w-3xl bg-background shadow-xl"
             onSendMessage={onSendMessage}
             status={status}

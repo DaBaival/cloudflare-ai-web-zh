@@ -39,7 +39,7 @@ import {
 import { db, type Session } from "@/lib/db";
 
 interface GroupedSessions {
-  type: "today" | "last 7 days" | "last 30 days" | "earlier";
+  type: "今天" | "近 7 天" | "近 30 天" | "更早";
   sessions: Session[];
 }
 
@@ -63,13 +63,13 @@ const AppSidebar = () => {
 
       let groupType: GroupedSessions["type"];
       if (diffDays === 0) {
-        groupType = "today";
+        groupType = "今天";
       } else if (diffDays <= 7) {
-        groupType = "last 7 days";
+        groupType = "近 7 天";
       } else if (diffDays <= 30) {
-        groupType = "last 30 days";
+        groupType = "近 30 天";
       } else {
-        groupType = "earlier";
+        groupType = "更早";
       }
 
       const group = groups.find((g) => g.type === groupType);
@@ -99,7 +99,7 @@ const AppSidebar = () => {
               <SidebarMenuButton asChild isActive={pathname === "/image"}>
                 <Link href="/image">
                   <ImageIcon />
-                  Image
+                  图像
                   <LoadingIndicator className="ml-auto" />
                 </Link>
               </SidebarMenuButton>
@@ -118,7 +118,7 @@ const AppSidebar = () => {
                         setSessionId("image");
                       }}
                     >
-                      <span className="text-destructive">Delete</span>
+                      <span className="text-destructive">删除</span>
                     </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
@@ -155,7 +155,7 @@ const AppSidebar = () => {
                                 setSessionId(id);
                               }}
                             >
-                              <span className="text-destructive">Delete</span>
+                              <span className="text-destructive">删除</span>
                             </DropdownMenuItem>
                           </DropdownMenuContent>
                         </DropdownMenu>
@@ -176,7 +176,7 @@ const AppSidebar = () => {
 
               <Link href="/" className="ml-auto">
                 <Button variant="ghost">
-                  New Chat
+                  新对话
                   <Plus />
                 </Button>
               </Link>
@@ -189,15 +189,15 @@ const AppSidebar = () => {
         <AlertDialogContent>
           <AlertDialogHeader>
             <AlertDialogTitle>
-              Are you sure you want to delete this session?
+              您确定要删除此会话吗？
             </AlertDialogTitle>
             <AlertDialogDescription>
-              This action cannot be undone.
+              此操作无法撤销。
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <AlertDialogAction onClick={handleDelete}>Delete</AlertDialogAction>
+            <AlertDialogCancel>取消</AlertDialogCancel>
+            <AlertDialogAction onClick={handleDelete}>删除</AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>

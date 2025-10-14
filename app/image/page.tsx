@@ -94,7 +94,7 @@ const Page = () => {
 
         <ViewTransition name="chat-input">
           <ChatInput
-            models={models.filter((i) => i.type === "Text to Image")}
+            models={models.filter((i) => i.type === "文本生成图像")}
             className="mx-auto max-w-3xl bg-background shadow-xl"
             onSendMessage={onSendMessage}
             status={status}

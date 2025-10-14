@@ -45,7 +45,7 @@ const AuthDialog = ({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Please enter your password to continue</DialogTitle>
+          <DialogTitle>请输入密码以继续</DialogTitle>
         </DialogHeader>
 
         <Form {...form}>
@@ -56,14 +56,14 @@ const AuthDialog = ({
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <Input placeholder="password" {...field} />
+                    <Input placeholder="密码" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
             <DialogFooter className="mt-4">
-              <Button type="submit">Submit</Button>
+              <Button type="submit">提交</Button>
             </DialogFooter>
           </form>
         </Form>

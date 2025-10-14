@@ -45,12 +45,12 @@ export default function Home() {
       <div className="flex flex-col justify-center h-full w-full space-y-4 px-4">
         <div className="font-bold text-2xl mx-auto font-mono">
           <TextEffect per="word" preset="fade-in-blur">
-            How can I assist you today?
+            我今天能为您提供什么帮助？
           </TextEffect>
         </div>
         <ViewTransition name="chat-input">
           <ChatInput
-            models={models.filter((i) => i.type === "Text Generation")}
+            models={models.filter((i) => i.type === "文本生成")}
             className="mx-auto max-w-3xl"
             onSendMessage={onSendMessage}
           />

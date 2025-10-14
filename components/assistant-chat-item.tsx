@@ -34,7 +34,7 @@ const AssistantChatItem = ({
                 <AccordionTrigger>
                   <div className="flex items-center">
                     <Brain className="size-4 mr-2" />
-                    Reasoning
+                    推理
                     {part.state === "streaming" && (
                       <Loader2 className="size-4 ml-2 animate-spin" />
                     )}
