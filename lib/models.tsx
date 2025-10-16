@@ -59,13 +59,13 @@ export const models: Model[] = [
     id: "@cf/bytedance/stable-diffusion-xl-lightning",
     name: "stable-diffusion-xl-lightning",
     logo: defaultLogo,
-    type: "Text to Image",
+    type: "文本生成图像",
   },
   {
     id: "@cf/black-forest-labs/flux-1-schnell",
     name: "flux-1-schnell",
     logo: defaultLogo,
-    type: "Text to Image",
+    type: "文本生成图像",
   },
   {
     id: "@cf/leonardo/lucid-origin",
@@ -77,6 +77,6 @@ export const models: Model[] = [
     id: "@cf/lykon/dreamshaper-8-lcm",
     name: "dreamshaper-8-lcm",
     logo: defaultLogo,
-    type: "Text to Image",
+    type: "文本生成图像",
   },
 ];
